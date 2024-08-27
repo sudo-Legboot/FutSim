@@ -1,0 +1,42 @@
+{
+    "players":{
+            "BAR" : [
+                {"name": "M. ter Stegen", "pos":"1","photo":"https://media.api-sports.io/football/players/127.png" },
+                {"name": "Jordi Alba", "pos":"2","photo":"https://media.api-sports.io/football/players/128.png" },
+                {"name": "R. Araujo", "pos":"3","photo":"https://media.api-sports.io/football/players/101814.png" },
+                {"name": "J. Koundé", "pos":"4","photo":"https://media.api-sports.io/football/players/1257.png" },
+                {"name": "João Cancelo", "pos":"5","photo":"https://media.api-sports.io/football/players/855.png" },
+                {"name": "F. de Jong", "pos":"6","photo":"https://media.api-sports.io/football/players/538.png" },
+                {"name": "İ. Gündoğan", "pos":"7","photo":"https://media.api-sports.io/football/players/633.png" },
+                {"name": "Sergi Roberto", "pos":"8","photo":"https://media.api-sports.io/football/players/137.png" },
+                {"name": "Pedri", "pos":"9","photo":"https://media.api-sports.io/football/players/133609.png" },
+                {"name": "R. Lewandowski", "pos":"10","photo":"https://media.api-sports.io/football/players/521.png" },
+                {"name": "Raphinha", "pos":"11","photo":"https://media.api-sports.io/football/players/1496.png" },
+                {"name": "Ferran Torres", "pos":"12","photo":"https://media.api-sports.io/football/players/931.png" },
+                {"name": "Oriol Romeu", "pos":"13","photo":"https://media.api-sports.io/football/players/18949.png" },
+                {"name": "Pau Cubarsí", "pos":"14","photo":"https://media.api-sports.io/football/players/396623.png" },
+                {"name": "Eric García", "pos":"15","photo":"https://media.api-sports.io/football/players/619.png" },
+                {"name": "A. Christensen", "pos":"16","photo":"https://media.api-sports.io/football/players/2282.png" },
+                {"name": "Sergio Busquets", "pos":"17","photo":"https://media.api-sports.io/football/players/144.png" }
+            ],
+            "REA":[
+                {"name": "T. Courtois","pos":"1","photo":"https://media.api-sports.io/football/players/730.png" },
+                {"name": "F. Mendy","pos":"2","photo":"https://media.api-sports.io/football/players/653.png" },
+                {"name": "A. Rüdiger","pos":"3","photo":"https://media.api-sports.io/football/players/2285.png" },
+                {"name": "Éder Militão","pos":"4","photo":"https://media.api-sports.io/football/players/372.png" },
+                {"name": "Dani Carvajal","pos":"5","photo":"https://media.api-sports.io/football/players/733.png" },
+                {"name": "L. Modrić","pos":"6","photo":"https://media.api-sports.io/football/players/754.png" },
+                {"name": "F. Valverde","pos":"7","photo":"https://media.api-sports.io/football/players/756.png" },
+                {"name": "A. Tchouaméni","pos":"8","photo":"https://media.api-sports.io/football/players/1271.png" },
+                {"name": "E. Camavinga","pos":"9","photo":"https://media.api-sports.io/football/players/2207.png" },
+                {"name": "Vinícius Júnior","pos":"10","photo":"https://media.api-sports.io/football/players/762.png" },
+                {"name": "Rodrygo","pos":"11","photo":"https://media.api-sports.io/football/players/10009.png" },
+                {"name": "A. Güler","pos":"12","photo":"https://media.api-sports.io/football/players/291964.png" },
+                {"name": "Nacho","pos":"13","photo":"https://media.api-sports.io/football/players/735.png" },
+                {"name": "Dani Ceballos","pos":"14","photo":"https://media.api-sports.io/football/players/748.png" },
+                {"name": "Lucas Vázquez","pos":"15","photo":"https://media.api-sports.io/football/players/757.png" },
+                {"name": "J. Bellingham","pos":"16","photo":"https://media.api-sports.io/football/players/129718.png" },
+                {"name": "D. Alaba","pos":"17","photo":"https://media.api-sports.io/football/players/505.png" }
+            ]
+        }
+}

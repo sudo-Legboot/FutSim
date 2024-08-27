@@ -1,28 +1,78 @@
 <main class="main">
-  <div class="content">
-    <div class="left-side">
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+  <div class="grid grid-cols-11">
+    <div class="m-1 col-span-5">
+      <form class="max-w-sm mx-auto">
+        <label for="teams" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Elige un Equipo</label>
+        <select (change)="teamC($event,'l-')" id="teams" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected disabled>Elige un Equipo</option>
+          <option value="BAR">Barcelona</option>
+          <option value="REA">Real Madrid</option>
+        </select>
+      </form>
+      <div class="grid grid-cols-6 gap-1 ffield bg-green-400">
+        <button class="pill col-start-1  bg-blue-600">PR</button><button class=" pill col-start-2 col-span-2 bg-green-700">DEF</button><button class=" pill col-start-4 col-span-2  bg-yellow-400">MID</button><button class="pill col-start-6 bg-red-600">DEL</button>
+        <button id="l-2" (click)="select($event)" class="pill col-start-3 playzone flex justify-center items-center">Lat Izq</button> 
+        <button id="l-8" (click)="select($event)" class=" pill col-start-5 playzone flex justify-center items-center">Vol. Izq</button>
+        <button id="l-3" (click)="select($event)" class="pill col-start-2 playzone flex justify-center items-center">Central</button> 
+        <button id="l-6" (click)="select($event)" class=" pill col-start-4 playzone flex justify-center items-center">Midfield</button> 
+        <button id="l-10" (click)="select($event)" class=" pill col-start-6 playzone flex justify-center items-center">Delantero</button>
+        <button id="l-1" class="pill col-start-1 playzone flex justify-center items-center">Portero</button> <br>
+        <button id="l-4" (click)="select($event)" class="pill col-start-2 playzone flex justify-center items-center">Central</button> 
+        <button id="l-7" (click)="select($event)" class=" pill col-start-4 playzone flex justify-center items-center">Midfield</button> 
+        <button id="l-11" (click)="select($event)" class=" pill col-start-6 playzone flex justify-center items-center">Delantero</button>
+        <button id="l-5" (click)="select($event)" class="pill col-start-3 playzone flex justify-center items-center">Lat Der</button> 
+        <button id="l-9" (click)="select($event)" class=" pill col-start-5 playzone flex justify-center items-center">Vol. Der.</button>
+      </div>
+      <p class="px-4">Banca</p>
+      <div class="grid grid-cols-6 gap-4 ffield bg-gray-400">
+        <button id="l-12" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="l-13" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="l-14" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="l-15" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="l-16" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="l-17" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+      </div>
     </div>
-    <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side">
-      <div class="pill-group">
-        @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {
-          <a
-            class="pill"
-            [href]="item.link"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>{{ item.title }}</span>
-          </a>
-        }
+
+    <div class="flex justify-center">
+      <div class="col-span-2">
+        <h1>00:00</h1>
+        <button>Pasar al 2do tiempo</button>
+      </div>
+    </div>
+
+    <div class="m-1 col-start-7 col-span-5">
+      <form class="max-w-sm mx-auto">
+        <label for="teams" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Elige un Equipo</label>
+        <select (change)="teamC($event,'r-')" id="teamsr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected disabled>Elige un Equipo</option>
+          <option value="BAR">Barcelona</option>
+          <option value="REA">Real Madrid</option>
+        </select>
+      </form>
+      <div class="grid grid-cols-6 gap-1 ffield bg-green-400">
+        <button class="pill col-start-1 bg-red-600">DEL</button><button class=" pill col-start-2 col-span-2 bg-yellow-400">MID</button><button class=" pill col-start-4 col-span-2 bg-green-700">DEF</button><button class="pill col-start-6  bg-blue-600">PR</button>
+        <button id="r-8" (click)="select($event)" class=" pill col-start-2 playzone flex justify-center items-center">Vol. Der.</button>
+        <button id="r-5" (click)="select($event)" class="pill col-start-4 playzone flex justify-center items-center">Lat Der.</button> <br>
+        <button id="r-10" (click)="select($event)" class=" pill col-start-1 playzone flex justify-center items-center">Delantero</button>
+        <button id="r-6" (click)="select($event)" class=" pill col-start-3 playzone flex justify-center items-center">Midfield</button>
+        <button id="r-3" (click)="select($event)" class="pill col-start-5 playzone flex justify-center items-center">Central</button> <br>
+        <button id="r-1" class="pill col-start-6 playzone flex justify-center items-center">Portero</button>
+        <button id="r-11" (click)="select($event)" class=" pill col-start-1 playzone flex justify-center items-center">Delantero</button>
+        <button id="r-7" (click)="select($event)" class=" pill col-start-3 playzone flex justify-center items-center">Midfield</button>
+        <button id="r-4" (click)="select($event)" class="pill col-start-5 playzone flex justify-center items-center">Central</button>
+        <button id="r-9" (click)="select($event)" class=" pill col-start-2 playzone flex justify-center items-center">Vol. Izq.</button> 
+        <button id="r-2" (click)="select($event)" class="pill col-start-4 playzone flex justify-center items-center">Lat Izq</button> 
+        
+      </div>
+      <p class="px-4">Banca</p>
+      <div class="grid grid-cols-6 gap-4 ffield bg-gray-400">
+        <button id="r-12" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="r-13" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="r-14" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="r-15" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="r-16" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
+        <button id="r-17" (click)="select($event)" class="pill playzone flex justify-center items-center"></button>
       </div>
     </div>
   </div>
