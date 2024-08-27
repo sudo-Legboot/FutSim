@@ -13,6 +13,7 @@ export class AppComponent {
   title = 'FutSim';
   tbutton = 'Iniciar 1er Tiempo';
   ttext = "00";
+  enabled = "disabled";
   sw1 : string | null = null;
   sl:boolean =false; sr : boolean = false;
   half = 0;
@@ -66,10 +67,12 @@ export class AppComponent {
   async tiempo(){
     switch (this.half){
       case 0: //No ha empezado
+        (document.getElementById("teamsl")! as HTMLSelectElement).disabled=true;
+        (document.getElementById("teamsr")! as HTMLSelectElement).disabled=true;
         for(var i=1;i<=45;i++)
         {
           this.ttext = (i.toString().padStart(2,"0"));
-          await this.sleep(50);
+          await this.sleep(40);
         }
         this.changesr = 3;
         this.changesl = 3;
@@ -80,7 +83,7 @@ export class AppComponent {
         for(var i=46;i<=90;i++)
         {
           this.ttext = (i.toString().padStart(2,"0"));
-          await this.sleep(50);
+          await this.sleep(40);
         }
         this.changesr = 0;
         this.changesl = 0;
@@ -95,6 +98,8 @@ export class AppComponent {
         this.half = 0;
         (document.getElementById("teamsl")! as HTMLSelectElement).value="";
         (document.getElementById("teamsr")! as HTMLSelectElement).value="";
+        (document.getElementById("teamsl")! as HTMLSelectElement).disabled=false;
+        (document.getElementById("teamsr")! as HTMLSelectElement).disabled=false;
         this.sr=false;
         this.sl = false;
         for(var i=1;i<=17;i++)
